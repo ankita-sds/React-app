@@ -1,0 +1,63 @@
+// var x = 35;
+// console.log(x);
+
+//--Destructing
+// const weekdays = [
+//     'Mon', 'Tue', 'Wed'
+// ];
+//console.log(weekdays);
+// const[first, second] = weekdays; 
+// console.log(first,second);
+
+
+//--template string
+const name = 'Ankita'
+//console.log(name)
+
+if(name == 'Reema'){
+    console.log(`${name} is a girl`)   //teplate string(easier compared to string literals)
+}
+else{
+    console.log(`${name} is not a girl`)
+}
+
+//ex-2 of template strings
+const age = 53
+const Fname = "Phil Dunphy" 
+console.log(`${Fname} is ${age} years old`)
+const msg = 'Good morning'
+console.log(`${msg} ${Fname}`)
+
+
+//--default parameter
+function newFunction(name, belt, age){
+    console.log('my name is ' + name + ' and my belt color is '+ belt + ' and my age is '+ age)
+}
+newFunction("Chai","blue",23);
+ 
+//now same function but using default parameter
+ function newFunction(name='Chaithra', age=23, belt ='green'){
+    console.log('my name is ' + name + ' and my belt color is '+ belt + ' and my age is '+ age)
+ }
+ newFunction("Claire","blue",48); //the function call parameters override the passed parameters in case of default parameters
+ newFunction();
+
+
+
+ //--destructuring -> it makes easier to extract what exactly is needed
+ const weekdays = ['mon', 'tue', 'wed', 'thur', 'fri', 'sat']
+ const [day1, , day3, day4, day5, day6 ] = weekdays
+ console.log(day1, day6, day3, day4)
+
+//  const weekdays = [
+//     'Mon',
+//     'Tue',
+//     'Wed',
+//     'Thu',
+//     'Fri'
+// ];
+// // let first = weekdays[0], second = weekdays[1], fifth = weekdays[4];
+// const [ first, second, , , fifth, sixth ] = weekdays;
+// console.log( first, second, fifth, sixth );
+
+
